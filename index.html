@@ -1,47 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <!-- The charset defines the character encoding -->
+  <meta charset="UTF-8">
+  <!-- The viewport tag helps make the page responsive on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The title appears in the browser tab -->
+  <title>Charity Water Landing Page</title>
+  <!-- Beginner-friendly: Styles are included here for simplicity -->
+  <style>
+    /* Reset default spacing for common elements */
+    body, h1, h2, p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set the background image for the whole page */
+    body {
+      background-image: url('img/attachment.jpg'); /* Use the image in the img folder */
+      background-size: cover;      /* The image covers the whole background */
+      background-position: center; /* The image is centered */
+      background-repeat: no-repeat;/* The image does not repeat */
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;           /* Make sure body fills the whole screen */
+      position: relative;          /* Needed for absolute positioning of footer */
+    }
+
+    /* Center the header content */
+    header {
+      text-align: center; /* Center everything inside header */
+      padding: 60px 20px; /* Add space above and below */
+    }
+
+    /* Make headline and subhead white for better contrast */
+    header h1,
+    header p {
+      color: #fff; /* White text */
+      text-shadow: 1px 1px 4px #222; /* Add a slight shadow for readability */
+    }
+
+    /* Style for the Donate Now button */
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #fcbf49; /* charity: water yellow */
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px; /* Rounded for a circle effect */
+      text-decoration: none;
+      transition: background 0.3s ease;
+      border: 4px solid #FFC907; /* yellow border */
+      box-shadow: 0 0 0 8px rgba(255, 201, 7, 0.3); /* soft yellow glow */
+      margin-top: 20px; /* Space above button */
+    }
+
+    /* Make the button a darker shade when hovered */
+    .btn:hover {
+      background: #e6ac00; /* darker yellow */
+      color: white;
+    }
+
+    /* Center the main content */
+    main {
+      text-align: center; /* Center headline and subhead */
+      padding: 40px 20px;
+    }
+
+    /* Footer stays at the very bottom and is always visible */
+    footer {
+      background: #003049;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      position: absolute;   /* Footer is positioned at the bottom */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header>
+    <div class="content">
+      <!-- Headline and donate button, both centered and now white text -->
+      <h1>Help Bring Clean Water</h1>
+      <p>Every drop of clean water changes a life. With your help, charity: water brings safe drinking water to communities in need — empowering children, families, and entire villages to thrive.</p>
+      <a href="#" class="btn">Donate Now</a>
+    </div>
+  </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <main>
+    <!-- Headline and subhead are now in the header above, so main can be used for more info -->
+  </main>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <footer>
+    <p>&copy; 2025 Charity: Water | Made with ❤️ by Wilhelmina Ludwig</p>
+  </footer>
 </body>
 </html>
